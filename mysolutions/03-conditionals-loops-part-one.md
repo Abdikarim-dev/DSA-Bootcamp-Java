@@ -1,24 +1,33 @@
 //Part 1
 //        [1. Area Of Circle Java Program]
+
         {int radius = 10;
         double circle =  Math.PI * Math.pow(radius,2);
         System.out.println(circle);}
 //        [2. Area Of Triangle]
+
         double base = 10;
         double height = 10;
         double triangle = (base*height)/2;
         System.out.println(triangle);
+
 //        [3. Area Of Rectangle Program]
+
         double width = 10;
         double length = 10;
         double rectangle = width*length;
         System.out.println(rectangle);
+
 //        [4. Area Of Isosceles Triangle]
+
         double isosceles = (base*height)/2;
         System.out.println(isosceles);
+
 //        [5. Area Of Parallelogram]
+
         double parallelogram = base * height;
         System.out.println(parallelogram);
+        
 //        [6. Area Of Rhombus]
 
         double pDiagonal = 10;
