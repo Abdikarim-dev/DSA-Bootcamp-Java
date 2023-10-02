@@ -1,8 +1,8 @@
 //Part 1
 //        [1. Area Of Circle Java Program]
-        int radius = 10;
+        {int radius = 10;
         double circle =  Math.PI * Math.pow(radius,2);
-        System.out.println(circle);
+        System.out.println(circle);}
 //        [2. Area Of Triangle]
         double base = 10;
         double height = 10;
