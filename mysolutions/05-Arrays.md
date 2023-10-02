@@ -1,11 +1,14 @@
 [3. Running Sum of 1d Array]
+
 public int[] runningSum(int[] nums) {
         for(int i=1;i< nums.length ;i++){
             nums[i] = nums[i]+nums[i-1];
         }
         return nums;
     }
+
 [6. Kids With the Greatest Number of Candies]
+
 public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         List<Boolean> list = new ArrayList<>();
         int max = 0;
@@ -21,7 +24,9 @@ public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         }
         return list;
 }
+
 [7. Number of Good Pairs]
+
 public int numIdenticalPairs(int[] nums) {
         int out = 0;
         for(int i=0;i<nums.length;i++){
@@ -31,7 +36,9 @@ public int numIdenticalPairs(int[] nums) {
         }
         return out;
 }
+
 [8. How Many Numbers Are Smaller Than the Current Number]
+
 public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] res = new int[nums.length];
     for(int i=0;i<nums.length;i++){
@@ -43,7 +50,9 @@ public int[] smallerNumbersThanCurrent(int[] nums) {
     }
     return res;
 }
+
 [13. Flipping an Image]
+
 public int[][] flipAndInvertImage(int[][] image) {
     for(int i = 0 ; i < image.length;i++){
         for(int j=0;j < image[i].length;j++){
@@ -68,6 +77,7 @@ public int[][] flipAndInvertImage(int[][] image) {
     return image;
 }
 [16. Find Numbers with Even Number of Digits]
+
 public int findNumbers(int[] nums) {
     int[] temp = nums;
     int sum = 0;
