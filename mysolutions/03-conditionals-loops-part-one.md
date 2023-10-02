@@ -26,6 +26,7 @@
         double rhombus = (pDiagonal * qDiagonal) /2;
         System.out.println(rhombus);
 //        [7. Area Of Equilateral Triangle]
+
         double a = 60;
         double equilateral = ((3 * 0.5) * (a*a))/4;
         System.out.println(equilateral);
