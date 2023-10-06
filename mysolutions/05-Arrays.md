@@ -1,7 +1,6 @@
 [1. Build Array from Permutation]
 
 public int[] buildArray(int[] nums) {
-
     int[] ans = new int[nums.length];
         
     for (int i = 0; i < nums.length;++) {
@@ -15,7 +14,6 @@ public int[] buildArray(int[] nums) {
 [2. Concatenation of Array]
 
 static int[] getConcatenation(int[] nums) {
-
     int[] res = new int[nums.length*2];
 
     for (int i = 0,j=nums.length; i <nums.length; i++,j++) {
@@ -29,7 +27,6 @@ static int[] getConcatenation(int[] nums) {
 [3. Running Sum of 1d Array]
 
 public int[] runningSum(int[] nums) {
-
         for(int i=1;i< nums.length ;i++){
 
             nums[i] = nums[i]+nums[i-1];
@@ -42,7 +39,6 @@ public int[] runningSum(int[] nums) {
 [4. Richest Customer Wealth]
 
 public int maximumWealth(int[][] accounts) {
-
         int sum = 0;
         int max = 0;
      
@@ -64,29 +60,30 @@ public int maximumWealth(int[][] accounts) {
 
 [5. Shuffle the Array]
 
-        public int[] shuffle(int[] nums, int n) {//n=3, {1,2,3,4,5,6}
-        int res[]  = new int[2*n];
-        int k = 0;
-        int j = n;
-       for(int i=0;i<n;i++){
-           res[k++] = nums[i];
+public int[] shuffle(int[] nums, int n) {
+    int res[]  = new int[2*n];
+    int k = 0;
+    int j = n;
+    for(int i=0;i<n;i++){
+    
+        res[k++] = nums[i];
           // k++;
            // 1
-           res[k++] = nums[j];
+        res[k++] = nums[j];
            //k++;
            // 2
-           j++;
-       }
-       return res;
+        j++;
     }
+    return res;
+}
 
 [6. Kids With the Greatest Number of Candies]
 
 static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-
         List<Boolean> list = new ArrayList<>();
         int max = 0;
         for(int i=0;i<candies.length;i++){
+
             if(candies[i]>max)
                 max=candies[i];
         }
@@ -103,7 +100,6 @@ static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
 [7. Number of Good Pairs]
 
 public int numIdenticalPairs(int[] nums) {
-
         int out = 0;
         
         for(int i=0;i<nums.length;i++){
@@ -120,8 +116,6 @@ public int numIdenticalPairs(int[] nums) {
 [8. How Many Numbers Are Smaller Than the Current Number]
 
 public int[] smallerNumbersThanCurrent(int[] nums) {
-
-        
         int[] res = new int[nums.length];
     for(int i=0;i<nums.length;i++){
         for(int j=0;j < nums.length;j++){
@@ -137,7 +131,6 @@ public int[] smallerNumbersThanCurrent(int[] nums) {
 [9. Create Target Array in the Given Order]
 
 static int[] createTargetArray(int[] nums, int[] index) {
-
         ArrayList<Integer> array = new ArrayList<Integer>();
         
         int[] target = new int[nums.length];
@@ -154,7 +147,6 @@ static int[] createTargetArray(int[] nums, int[] index) {
 [10. Check if the Sentence Is Pangram] 
 
 public boolean checkIfPangram(String sentence) {
-
     for (int i=97;i<=122;i++){
         if(sentence.indexOf((char)i) < 0){
             return false;
@@ -167,7 +159,6 @@ public boolean checkIfPangram(String sentence) {
 [11. Count Items Matching a Rule]
 
 public static int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
-
         int sum =0;
         for(int row =0; row<items.size();row++){
             
@@ -182,8 +173,6 @@ public static int countMatches(List<List<String>> items, String ruleKey, String 
 
 [12. Highest Alititude]
 public int largestAltitude(int[] gain) {
-
-        
     int current = 0;
     int max =0;
     for(int i : gain){
@@ -196,7 +185,6 @@ public int largestAltitude(int[] gain) {
 [13. Flipping an Image]
 
 public int[][] flipAndInvertImage(int[][] image) {
-
     for(int i = 0 ; i < image.length;i++){
       
         for(int j=0;j < image[i].length;j++){
@@ -235,7 +223,6 @@ public int[][] flipAndInvertImage(int[][] image) {
 [15. Matrix Diagonal Sum]
 
 static int diagonalSum(int[][] mat) {
-
         int d1 = 0;
         int d2 = 0;
         int col1=0;
@@ -265,7 +252,6 @@ static int diagonalSum(int[][] mat) {
 [16. Find Numbers with Even Number of Digits]
 
 public int findNumbers(int[] nums) {
-
     int[] temp = nums;
     int sum = 0;
     int even =0;
@@ -290,7 +276,6 @@ public int findNumbers(int[] nums) {
 [17. Transpose Matrix]
 
 static int[][] transpose(int[][] matrix) {
-
     int numOfRow = matrix.length;
     int numOfCol = matrix[0].length;
 
@@ -306,7 +291,6 @@ static int[][] transpose(int[][] matrix) {
 }
 
 [18. Add to Array-Form of Integer]
-
    public List<Integer> addToArrayForm(int[] num, int k){
 
         List<Integer> ans = new ArrayList<Integer>();
@@ -334,7 +318,6 @@ static int[][] transpose(int[][] matrix) {
 [21. Two sum]
 
    public int[] twoSum(int[] nums, int target) {
-
         int[] res = new int[2];
 
         for(int i = 0 ; i<nums.length;i++){
